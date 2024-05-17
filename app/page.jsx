@@ -1,8 +1,13 @@
+import Link from 'next/link';
+import Hero from '@/components/Hero';
+import InfoBoxes from '@/components/InfoBoxes';
+
 const HomePage = () => {
   return (
-    <section>
-      <h1>Estate Flix</h1>
-    </section>
+    <>
+      <Hero />
+      <InfoBoxes />
+    </>
   );
 };
 

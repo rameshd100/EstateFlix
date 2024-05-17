@@ -1,4 +1,6 @@
 import '@/assets/styles/globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'EstateFlix | Find The Perfect Rental',
@@ -10,7 +12,9 @@ const MainLayout = ({ children }) => {
   return (
     <html>
       <body>
-        <div className="text-3xl">{children}</div>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
